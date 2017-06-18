@@ -53,7 +53,7 @@ public class jdbc03 {
 				String sql2 = "SELECT * FROM cust";
 				//2.connection
 				try (//裡面放入自助close的物件;格式try(裡面放入自助close的物件){執行邏輯語句}catch(){}
-					//在try()裡面的東西必需要實現AutoCloseable的物件
+					//在try()裡面的東西必需要實現AutoCloseable的物件,當整個執行完會執行close()方法
 					Connection conn2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/ming"
 					                       ,prop2);
 					//3.SQL statment
