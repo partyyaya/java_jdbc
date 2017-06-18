@@ -16,11 +16,11 @@ public class jdbc04 {
 				try {
 					SQLServerDataSource ds = new SQLServerDataSource();
 					ds.setIntegratedSecurity(false);
-					ds.setServerName("10.21.200.66");
+					ds.setServerName("localhost");
 					ds.setPortNumber(1433); 
-					ds.setUser("sa");
-					ds.setPassword("sa");
-					ds.setDatabaseName("Northwind");				
+					ds.setUser("ming");
+					ds.setPassword("123456");
+					ds.setDatabaseName("Northwind");		 
 						Connection con = ds.getConnection();
 						System.out.println("ok");
 					} catch (Exception e) {

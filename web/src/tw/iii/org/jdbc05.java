@@ -10,8 +10,8 @@ public class jdbc05 {
 		public static void main(String[] args) {
 //			String connectionUrl = 
 //					"jdbc:sqlserver://localhost:1433;" +
-//					"user=sa;password=sa;" +
-//					"databaseName=Northwind;integratedSecurity=true;";
+//					"user=ming;password=123456;" +
+//					"databaseName=Northwind;";
 			String connectionUrl = 
 					"jdbc:sqlserver://10.21.200.66:1433;" +
 					"user=sa;password=sa;" +
@@ -33,6 +33,6 @@ public class jdbc05 {
 			}catch(Exception e){
 				System.out.println(e);
 			}
-			
+			  
 		}	
 }
