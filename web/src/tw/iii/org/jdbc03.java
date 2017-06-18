@@ -11,15 +11,14 @@ public class jdbc03 {
 
 	public static void main(String[] args) {
 		String id,cname,tel,birthday;
-		//1.driver
+		//1.driver,會自動註冊,可寫可不寫
 //				try {
 //					Class.forName("com.mysql.jdbc.Driver");
 //					System.out.println("ok");
 //				} catch (ClassNotFoundException e) {
 //					System.out.println(e);
 //					System.exit(0);
-//				}
-				
+//				}			
 				try {
 					Properties prop = new Properties();
 					prop.setProperty("user", "root");
