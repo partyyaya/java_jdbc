@@ -23,13 +23,13 @@ public class jdbc03 {
 					Properties prop = new Properties();
 					prop.setProperty("user", "root");
 					prop.setProperty("password", "root");
-					//2.connection
+					//2.connection(建立連結)
 					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ming"
 		                                   ,prop);
 //					Connection conn = DriverManager.getConnection("jdbc:mysql://10.21.200.66/brad"
 //								,prop);
 					System.out.println("ok");
-				//3.SQL statment
+				//3.SQL statment(準備空間(箱子))
 					Statement stmt = conn.createStatement();
 					String sql = "SELECT * FROM cust";
 					ResultSet rs=stmt.executeQuery(sql);

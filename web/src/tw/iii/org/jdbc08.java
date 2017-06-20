@@ -24,6 +24,8 @@ public class jdbc08 {
 			String sql = "SELECT * FROM gift";
 			JSONWriter jw = new JSONStringer().array();
 			PreparedStatement pstmt = conn.prepareStatement(sql);
+			
+			//executeQuery()用於查詢
 			ResultSet rs = pstmt.executeQuery();
 			while (rs.next()){
 				jw.object();

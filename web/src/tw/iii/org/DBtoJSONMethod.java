@@ -11,6 +11,8 @@ public class DBtoJSONMethod {
 										.endObject().toString();
 		System.out.println(json);
 		
+		//array()與endArray()代表一個做出一陣列,轉換成JSON模式
+		//object()與endObject()之間視為一個元素,轉換成JSON模式
 		String json2 =  new JSONStringer().array()
 				.object()
 				.key("key1")
