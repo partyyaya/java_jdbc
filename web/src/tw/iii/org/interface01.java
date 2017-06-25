@@ -3,9 +3,9 @@ package tw.iii.org;
 public class interface01 {
 
 	public static void main(String[] args) {
-		p1 obj1=new in01();//obj無m2方法,因代表此介面
-		p1 obj3=new in02();//obj無m2方法,因代表此介面
-		in01 obj2 = (in01)obj1;//轉型後就會有,因具有in01本人
+		p1 obj1=new in01();//obj1無m2方法,代表介面
+		p1 obj3=new in02();//obj3無m3方法,代表介面
+		in01 obj2 = (in01)obj1;//轉型後才會有實體方法,因具有in01本人
 		
 		main2(obj3);//呼叫時會自動去調用實體的m1方法與該專有方法
 	}
