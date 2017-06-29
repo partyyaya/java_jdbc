@@ -11,7 +11,7 @@ import java.util.Properties;
 import org.json.JSONStringer;
 import org.json.JSONWriter;
 
-public class jdbc08 {
+public class jdbc08DBtoJson {
 
 	public static void main(String[] args) {
 		Properties prop = new Properties();

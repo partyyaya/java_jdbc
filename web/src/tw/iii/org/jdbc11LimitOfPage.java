@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Properties;
 
-public class jdbc11 {
+public class jdbc11LimitOfPage {
 
 	public static void main(String[] args) {
 		// -------------------

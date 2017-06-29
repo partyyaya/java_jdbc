@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Properties;
 
-public class jdbc12 {
+public class jdbc12ResultOfUpdate {
 
 	public static void main(String[] args) {
 				Properties prop = new Properties();
@@ -23,6 +23,8 @@ public class jdbc12 {
 							ResultSet.TYPE_FORWARD_ONLY,
 							ResultSet.CONCUR_UPDATABLE);
 					System.out.println(isOk);
+					//ResultSet.TYPE_FORWARD_ONLY:The cursor can only move forward in the result set.
+					//ResultSet.CONCUR_UPDATABLE:Creates an updateable result set.
 					Statement stmt = conn.createStatement(ResultSet.TYPE_FORWARD_ONLY,
 							ResultSet.CONCUR_UPDATABLE);					
 					String sql = "SELECT * FROM member WHERE id=2";				
